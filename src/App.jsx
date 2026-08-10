@@ -8,6 +8,7 @@ import Gallery from "./pages/Gallery/Gallery";
 import Pricing from "./pages/Pricing/Pricing";
 import Header from "./pages/Header/Header";
 import Contact from "./pages/Contact/Contact";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -54,6 +55,7 @@ function App() {
       <section id="contact">
         <Contact/>
       </section>
+      <Analytics />
     </>
   );
 }
